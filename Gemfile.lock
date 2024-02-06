@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/radar/paranoia.git
-  revision: 86be201e9cbd6b0b008f9bd60a92ea10ad6c8533
-  branch: rails4
-  specs:
-    paranoia (2.1.0)
-      activerecord (~> 4.0)
-
-GIT
   remote: https://bitbucket.org/cdl/omniauth-shibboleth.git
   revision: 76b0eb998f21a012d22956245f547e1804d37363
   branch: master
@@ -21,6 +13,14 @@ GIT
     ifad-rtf (0.4.2)
       nokogiri (~> 1.1)
       tidy-ext (~> 0.1)
+
+GIT
+  remote: https://github.com/radar/paranoia.git
+  revision: bd3383729c790bf09e488f84221eaaea27c6597e
+  branch: rails4
+  specs:
+    paranoia (2.2.0.alpha)
+      activerecord (>= 4.0, < 5.1)
 
 GEM
   remote: https://rubygems.org/
@@ -131,7 +131,7 @@ GEM
       mime-types (>= 1.16, < 3)
     mime-types (2.6.1)
     mini_magick (4.1.0)
-    mini_portile (0.6.2)
+    mini_portile2 (2.1.0)
     minitest (4.7.5)
     multi_json (1.11.2)
     mysql2 (0.3.18)
@@ -143,8 +143,8 @@ GEM
     net-ssh (2.9.2)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    nokogiri (1.6.6.2)
-      mini_portile (~> 0.6.0)
+    nokogiri (1.6.8.1)
+      mini_portile2 (~> 2.1.0)
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
